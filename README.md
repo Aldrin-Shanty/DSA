@@ -87,6 +87,6 @@ To use the implementations in this repository:
 
 For any inquiries or feedback, please contact:
 
-    Name: Aldrin Shanty
-    Email: aldrinshanty22@gmail.com
-    GitHub: Aldrin-Shanty
+- Name: Aldrin Shanty
+- Email: aldrinshanty22@gmail.com
+- GitHub: [Aldrin-Shanty](https://github.com/Aldrin-Shanty)
