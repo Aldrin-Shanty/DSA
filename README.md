@@ -25,6 +25,7 @@ The repository is organized into the following subfolders:
   - Skip List
   - B Tree
   - B+ Tree
+  - Bloom Filters
 
 - **Search_Sort**: Contains implementations of various search and sort algorithms, including:
 
