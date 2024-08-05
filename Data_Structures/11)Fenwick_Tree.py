@@ -11,10 +11,10 @@ Operations:
 
 Time Complexity:
 - **Initialization**: O(n log n), where n is the number of elements in the array.
-- **Prefix Sum Query**: O(log n).
-- **Range Sum Query**: O(log n).
-- **Update**: O(log n).
-- **Set**: O(log n).
+- **Prefix Sum Query**: O(log n)
+- **Range Sum Query**: O(log n)
+- **Update**: O(log n)
+- **Set**: O(log n)
 
 Applications:
 - Efficiently performing range sum queries and updates in dynamic arrays.

@@ -2,39 +2,26 @@
 A Suffix Array is a data structure that provides a sorted array of all suffixes of a given text. 
 It is useful for efficient string searching, substring queries, and text processing.
 
-Attributes:
-    text (str): The input text for which the suffix array is constructed.
-    n (int): The length of the input text.
-    suffix_array (List[int]): The sorted array of starting indices of all suffixes of the text.
-
-Methods:
-    build_suffix_array() -> List[int]:
-        Constructs the suffix array by sorting all suffixes of the text lexicographically.
-        
-    build_lcp_array() -> List[int]:
-        Constructs the Longest Common Prefix (LCP) array for the suffix array.
-        The LCP array indicates the length of the longest common prefix between each pair of consecutive suffixes.
-        
-    search(pattern: str) -> int:
-        Searches for the given pattern in the text using binary search on the suffix array.
-        Returns the starting index of the first occurrence of the pattern if found, otherwise -1.
-        
-    print_suffix_array() -> None:
-        Prints the suffix array.
-        
-    print_lcp_array() -> None:
-        Prints the LCP array.
+Operations:
+1. **Initialization of Suffix Array**: Constructs the suffix array by sorting all suffixes of the text lexicographically.
+2. **Initialization of LCP Array**: Constructs the Longest Common Prefix (LCP) array for the suffix array.
+    The LCP array indicates the length of the longest common prefix between each pair of consecutive suffixes.
+3. **Search**: Searches for the given pattern in the text using binary search on the suffix array.
+    Returns the starting index of the first occurrence of the pattern if found, otherwise -1.
+4. **Print Suffix Array**: Prints the suffix array.
+5. **Print LCP Array**: Prints the LCP array.
 
 Time Complexity:
-    - **build_suffix_array**: O(n log n), where n is the length of the text.
-    - **build_lcp_array**: O(n), where n is the length of the text.
-    - **search**: O(m log n), where m is the length of the pattern and n is the length of the text.
+- **Initialization of Suffix Array**: O(n log n), where n is the length of the text.
+- **Initialization of LCP Array**: O(n), where n is the length of the text.
+- **Search**: O(m log n), where m is the length of the pattern and n is the length of the text.
 
 Applications:
     - Efficient substring search and pattern matching.
     - Text indexing and retrieval in search engines.
     - Data compression algorithms and bioinformatics for DNA sequence analysis.
 """
+
 
 class SuffixArray:
     """
@@ -49,9 +36,6 @@ class SuffixArray:
     def __init__(self, text: str):
         """
         Initializes the SuffixArray with the given text.
-
-        Args:
-            text (str): The input text for which the suffix array will be constructed.
         """
         self.text = text
         self.n = len(text)

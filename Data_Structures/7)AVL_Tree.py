@@ -6,23 +6,12 @@ In an AVL Tree, the heights of the two child subtrees of any node differ by at m
 and this balance condition must be preserved after every insertion and deletion operation.
 
 AVL Tree Operations:
-1. **insert(key)**:
-    - Inserts a key into the AVL Tree while maintaining the AVL balance property.
-
-2. **search(key)**:
-    - Searches for a key in the AVL Tree and returns True if the key is found, otherwise False.
-
-3. **delete(key)**:
-    - Deletes a key from the AVL Tree and maintains the AVL balance property.
-
-4. **inorder_traversal()**:
-    - Returns a list of elements in the AVL Tree in ascending order.
-
-5. **preorder_traversal()**:
-    - Returns a list of elements in the AVL Tree following a preorder traversal (root, left, right).
-
-6. **postorder_traversal()**:
-    - Returns a list of elements in the AVL Tree following a postorder traversal (left, right, root).
+1. **Insert**: Inserts a key into the AVL Tree while maintaining the AVL balance property.
+2. **Search**: Searches for a key in the AVL Tree and returns True if the key is found, otherwise False.
+3. **Delete**: Deletes a key from the AVL Tree and maintains the AVL balance property.
+4. **Inorder Traversal**: Returns a list of elements in the AVL Tree in ascending order.
+5. **Preorder Traversal**: Returns a list of elements in the AVL Tree following a preorder traversal (root, left, right).
+6. **Postorder Traversal**: Returns a list of elements in the AVL Tree following a postorder traversal (left, right, root).
 
 Time Complexity:
 - **Insertion**: O(log n), where n is the number of nodes in the tree.

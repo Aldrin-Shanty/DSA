@@ -2,14 +2,17 @@
 A Segment Tree is a data structure used for efficiently answering range queries and updating elements in an array. It is particularly useful for scenarios where multiple queries and updates are required on an array of data.
 
 Operations:
-1. **Build**: Constructs the segment tree from the given array. The build operation initializes the tree with the values from the array and computes internal nodes based on the sum of child nodes.
-   - Time Complexity: O(n)
+1. **Initialization**: Constructs the segment tree from the given array. 
+    The build operation initializes the tree with the values from the array and computes internal nodes based on the sum of child nodes.
+2. **Update**: Modifies the value of a specific element in the array and updates the segment tree to reflect this change. 
+    The update operation affects only the nodes that correspond to the updated element.
+3. **Query**: Retrieves the aggregate information (such as the sum) for a given range of elements in the array. 
+    This operation efficiently computes the result by merging information from relevant segments of the tree.
 
-2. **Update**: Modifies the value of a specific element in the array and updates the segment tree to reflect this change. The update operation affects only the nodes that correspond to the updated element.
-   - Time Complexity: O(log n)
-
-3. **Query**: Retrieves the aggregate information (such as the sum) for a given range of elements in the array. This operation efficiently computes the result by merging information from relevant segments of the tree.
-   - Time Complexity: O(log n)
+Time Complexity:
+- **Initialization**: O(n), where n is the number of elements in the array.
+- **Update**: O(log n)
+- **Query**: O(log n)
 
 Applications:
 - **Range Queries**: Efficiently calculates sums, minimums, maximums, or other aggregate functions over a specified range in an array.

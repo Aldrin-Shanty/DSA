@@ -6,19 +6,14 @@ where each node represents a single character of a string. It is particularly ef
 applications that involve searching for words or prefixes.
 
 Operations:
-1. **Insert(word: str) -> None**:
-   - Inserts a word into the Trie. Each character of the word is stored in a separate node, and the end of the word is marked in the final node.
-   
-2. **CountWordsWithPrefix(prefix: str) -> int**:
-   - Counts the number of words in the Trie that start with the given prefix. It navigates to the end of the prefix and counts all words that can be formed from this point.
-
-3. **_CountWordsFromNode(node: TrieNode) -> int**:
-   - Helper method used to recursively count the number of words starting from a given TrieNode. It is used internally by `CountWordsWithPrefix`.
+1. **Insert**: Inserts a word into the Trie. Each character of the word is stored in a separate node, and the end of the word is marked in the final node.
+2. **CountWordsWithPrefix**: Counts the number of words in the Trie that start with the given prefix. It navigates to the end of the prefix and counts all words that can be formed from this point.
 
 Time Complexity:
-- **Insert**: O(m), where m is the length of the word being inserted. Each character is processed once, and each insertion operation involves creating nodes for new characters if they do not already exist.
-- **CountWordsWithPrefix**: O(m + k), where m is the length of the prefix and k is the number of words with that prefix. The method first traverses the Trie to find the end of the prefix, then recursively counts all words starting from that node.
-- **_CountWordsFromNode**: O(k), where k is the number of words starting from the given node. It performs a recursive traversal of the Trie subtree.
+- **Insert**: O(m), where m is the length of the word being inserted. 
+    Each character is processed once, and each insertion operation involves creating nodes for new characters if they do not already exist.
+- **CountWordsWithPrefix**: O(m + k), where m is the length of the prefix and k is the number of words with that prefix. 
+    The method first traverses the Trie to find the end of the prefix, then recursively counts all words starting from that node.
 
 Applications:
 - **Autocomplete Systems**: Tries are used in search engines and text editors to provide suggestions based on user input.

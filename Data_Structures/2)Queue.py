@@ -4,11 +4,11 @@ Queue Data Structure
 This module implements a basic queue using a Python list. A queue is a linear data structure that follows the First In, First Out (FIFO) principle.
 
 Time Complexity:
-- `enqueue`: O(1)
-- `dequeue`: O(n)
-- `display`: O(n)
-- `size`: O(1)
-- `is_empty`: O(1)
+- Enqueue: O(1)
+- Dequeue: O(n)
+- Display: O(n)
+- Size: O(1)
+- Is Empty: O(1)
 
 Applications:
 Queues are used in scenarios such as scheduling tasks, handling requests in web servers, and breadth-first search algorithms.

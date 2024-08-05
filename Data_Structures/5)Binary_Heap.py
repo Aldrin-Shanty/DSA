@@ -7,29 +7,20 @@ Heap Overview:
 - Operations are performed to maintain the heap property during insertions and deletions.
 
 Heap Operations:
-1. **push(item)**:
-   - Inserts an item into the heap while maintaining the heap property.
-
-2. **pop()**:
-   - Removes and returns the root element of the heap (i.e., the maximum element in a max-heap or the minimum element in a min-heap).
-
-3. **peek()**:
-   - Returns the root element of the heap without removing it.
-
-4. **heapify(iterable)**:
-   - Converts an iterable into a heap, rearranging the elements to satisfy the heap property.
-
+1. **Push**: Inserts an item into the heap while maintaining the heap property.
+2. **Pop** : Removes and returns the root element of the heap (i.e., the maximum element in a max-heap or the minimum element in a min-heap).
+3. **Peek**: Returns the root element of the heap without removing it.
+4. **Heapify**: Converts an iterable into a heap, rearranging the elements to satisfy the heap property.
 5. **Heap Transformations**:
    - **Max-Heap**: Uses negation to transform Python’s min-heap into a max-heap.
-   - **Min-Heap**: Uses Python’s built-in `heapq` for a min-heap implementation.
-
+   - **Min-Heap**: Uses Python’s built-in `heapq` for a min-heap implementation
 6. **Underlying Heap Implementations**:
    - **MaxHeap**: Implements a max-heap manually with basic operations like insertion, deletion, and heapify.
    - **MinHeap**: Implements a min-heap manually with basic operations like insertion, deletion, and heapify.
 
 Heap Time Complexity:
-- **Insertion (push)**: O(log n)
-- **Deletion (pop)**: O(log n)
+- **Insertion**: O(log n)
+- **Deletion** O(log n)
 - **Peek**: O(1)
 - **Heapify**: O(n), where n is the number of elements
 

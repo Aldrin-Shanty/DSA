@@ -5,29 +5,14 @@ A graph is a collection of nodes (vertices) connected by edges. Graphs can be di
 and edges can have weights representing the cost or distance between nodes.
 
 Operations:
-1. **add_edge(u, v, weight, directed=False)**:
-   - Adds an edge from vertex u to vertex v with a specified weight. If directed is False, the edge is undirected.
-
-2. **print_adj_list()**:
-   - Prints the adjacency list representation of the graph.
-
-3. **print_adj_matrix()**:
-   - Prints the adjacency matrix representation of the graph.
-
-4. **prims_algorithm()**:
-   - Finds the Minimum Spanning Tree (MST) of the graph using Prim's algorithm.
-
-5. **kruskals_algorithm()**:
-   - Finds the Minimum Spanning Tree (MST) of the graph using Kruskal's algorithm.
-
-6. **dijkstra_algorithm(start)**:
-   - Finds the shortest path from a starting vertex to all other vertices using Dijkstra's algorithm.
-
-7. **floyd_warshall_algorithm()**:
-   - Finds the shortest paths between all pairs of vertices using the Floyd-Warshall algorithm.
-
-8. **bellman_ford_algorithm(start)**:
-   - Finds the shortest paths from a starting vertex to all other vertices using the Bellman-Ford algorithm.
+1. **Add Edge**: Adds an edge from vertex u to vertex v with a specified weight. If directed is False, the edge is undirected.
+2. **Print Adjacency List**: Prints the adjacency list representation of the graph.
+3. **Print Adjacency Matrix**: Prints the adjacency matrix representation of the graph.
+4. **Prims Algorithm**: Finds the Minimum Spanning Tree (MST) of the graph using Prim's algorithm.
+5. **Kruskals Algorithm**: Finds the Minimum Spanning Tree (MST) of the graph using Kruskal's algorithm.
+6. **Djikstra Algorithm**: Finds the shortest path from a starting vertex to all other vertices using Dijkstra's algorithm.
+7. **Floyd Warshall Algorithm**: Finds the shortest paths between all pairs of vertices using the Floyd-Warshall algorithm.
+8. **Bellman Ford Algorithm**: Finds the shortest paths from a starting vertex to all other vertices using the Bellman-Ford algorithm.
 
 Time Complexity:
 - **Adding Edge**: O(1) for adjacency list and O(1) for adjacency matrix.

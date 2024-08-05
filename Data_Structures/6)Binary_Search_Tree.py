@@ -1,27 +1,16 @@
 """
-    Binary Search Tree (BST) Implementation
+Binary Search Tree (BST) Implementation
 
 The Binary Search Tree (BST) is a data structure that stores elements in a sorted manner, allowing for efficient searching, insertion, and deletion operations.
 Each node in the BST has at most two children, with the left child having a smaller value and the right child having a larger value.
 
 BST Operations:
-1. **insert(key)**:
-   - Inserts a key into the BST while maintaining the BST property.
-
-2. **search(key)**:
-   - Searches for a key in the BST and returns True if the key is found, otherwise False.
-
-3. **delete(key)**:
-   - Deletes a key from the BST and maintains the BST property.
-
-4. **inorder_traversal()**:
-   - Returns a list of elements in the BST in ascending order.
-
-5. **preorder_traversal()**:
-   - Returns a list of elements in the BST following a preorder traversal (root, left, right).
-
-6. **postorder_traversal()**:
-   - Returns a list of elements in the BST following a postorder traversal (left, right, root).
+1. **Insert**: Inserts a key into the BST while maintaining the BST property.
+2. **Search**: Searches for a key in the BST and returns True if the key is found, otherwise False.
+3. **Delete**: Deletes a key from the BST and maintains the BST property.
+4. **Inorder Traversal**: Returns a list of elements in the BST in ascending order.
+5. **Preorder Traversal**: Returns a list of elements in the BST following a preorder traversal (root, left, right).
+6. **Postorder Traversal**: Returns a list of elements in the BST following a postorder traversal (left, right, root).
 
 Time Complexity:
 - **Insertion**: O(h), where h is the height of the tree. In the average case, it's O(log n), but in the worst case (unbalanced tree), it's O(n).
