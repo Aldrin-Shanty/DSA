@@ -10,16 +10,16 @@ Operations:
 5. **Set**: Sets the value at a specific index to a new value.
 
 Time Complexity:
-- **Initialization**: O(n log n), where n is the number of elements in the array.
-- **Prefix Sum Query**: O(log n)
-- **Range Sum Query**: O(log n)
-- **Update**: O(log n)
-- **Set**: O(log n)
+    - **Initialization**: O(n log n), where n is the number of elements in the array.
+    - **Prefix Sum Query**: O(log n)
+    - **Range Sum Query**: O(log n)
+    - **Update**: O(log n)
+    - **Set**: O(log n)
 
 Applications:
-- Efficiently performing range sum queries and updates in dynamic arrays.
-- Used in algorithms for computational geometry, binary search, and dynamic programming.
-- Suitable for scenarios where frequent updates and prefix sum queries are required.
+    - Efficiently performing range sum queries and updates in dynamic arrays.
+    - Used in algorithms for computational geometry, binary search, and dynamic programming.
+    - Suitable for scenarios where frequent updates and prefix sum queries are required.
 """
 
 class Fenwick_Tree:

@@ -10,7 +10,7 @@ Operations:
 3. **Print Adjacency Matrix**: Prints the adjacency matrix representation of the graph.
 4. **Prims Algorithm**: Finds the Minimum Spanning Tree (MST) of the graph using Prim's algorithm.
 5. **Kruskals Algorithm**: Finds the Minimum Spanning Tree (MST) of the graph using Kruskal's algorithm.
-6. **Djikstra Algorithm**: Finds the shortest path from a starting vertex to all other vertices using Dijkstra's algorithm.
+6. **Djikstra Algorithm**: Finds the shortest path from a starting vertex to all other vertices using Djikstra's algorithm.
 7. **Floyd Warshall Algorithm**: Finds the shortest paths between all pairs of vertices using the Floyd-Warshall algorithm.
 8. **Bellman Ford Algorithm**: Finds the shortest paths from a starting vertex to all other vertices using the Bellman-Ford algorithm.
 
@@ -20,7 +20,7 @@ Time Complexity:
 - **Printing Adjacency Matrix**: O(V^2).
 - **Prim's Algorithm**: O(E log V) with a priority queue.
 - **Kruskal's Algorithm**: O(E log V) due to sorting edges.
-- **Dijkstra's Algorithm**: O(E log V) with a priority queue.
+- **Djikstra's Algorithm**: O(E log V) with a priority queue.
 - **Floyd-Warshall Algorithm**: O(V^3).
 - **Bellman-Ford Algorithm**: O(VE).
 
@@ -231,9 +231,9 @@ class Graph:
 
         return min_cost, mst_edges
 
-    def dijkstra_algorithm(self, start: int) -> List[float]:
+    def djikstra_algorithm(self, start: int) -> List[float]:
         """
-        Find the shortest path from a starting vertex to all other vertices using Dijkstra's algorithm.
+        Find the shortest path from a starting vertex to all other vertices using Djikstra's algorithm.
 
         Args:
             start (int): The starting vertex for the shortest path calculations.
@@ -243,10 +243,10 @@ class Graph:
         """
 
         """
-        Dijkstra's Algorithm
+        Djikstra's Algorithm
 
         Logic:
-            Dijkstra's algorithm finds the shortest path from a single source vertex to all other vertices in a weighted graph with non-negative weights. It uses a priority queue to repeatedly select the vertex with the smallest distance and update the shortest path to its neighboring vertices.
+            Djikstra's algorithm finds the shortest path from a single source vertex to all other vertices in a weighted graph with non-negative weights. It uses a priority queue to repeatedly select the vertex with the smallest distance and update the shortest path to its neighboring vertices.
 
         Data Structure Used:
             - Priority Queue (Min-Heap): To efficiently retrieve the vertex with the smallest distance.
@@ -255,7 +255,7 @@ class Graph:
             - Greedy Algorithm: Expands the shortest path incrementally.
 
         Use Case:
-            - Dijkstra's algorithm is commonly used in routing and navigation systems where shortest paths need to be computed in weighted graphs with non-negative weights.
+            - Djikstra's algorithm is commonly used in routing and navigation systems where shortest paths need to be computed in weighted graphs with non-negative weights.
         """
 
         dist = [float('inf')] * self.vertices
@@ -385,9 +385,9 @@ if __name__ == "__main__":
     min_cost, mst_edges = g.kruskals_algorithm()
     print(f"\nKruskal's Algorithm:\nMinimum Cost: {min_cost}\nEdges in MST: {mst_edges}")
 
-    # Dijkstra's Algorithm from vertex 0
-    distances = g.dijkstra_algorithm(0)
-    print(f"\nDijkstra's Algorithm (starting from vertex 0):\nDistances: {distances}")
+    # Djikstra's Algorithm from vertex 0
+    distances = g.djikstra_algorithm(0)
+    print(f"\nDjikstra's Algorithm (starting from vertex 0):\nDistances: {distances}")
 
     # Bellman-Ford Algorithm from vertex 0
     distances = g.bellman_ford_algorithm(0)

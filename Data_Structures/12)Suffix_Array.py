@@ -12,9 +12,9 @@ Operations:
 5. **Print LCP Array**: Prints the LCP array.
 
 Time Complexity:
-- **Initialization of Suffix Array**: O(n log n), where n is the length of the text.
-- **Initialization of LCP Array**: O(n), where n is the length of the text.
-- **Search**: O(m log n), where m is the length of the pattern and n is the length of the text.
+    - **Initialization of Suffix Array**: O(n log n), where n is the length of the text.
+    - **Initialization of LCP Array**: O(n), where n is the length of the text.
+    - **Search**: O(m log n), where m is the length of the pattern and n is the length of the text.
 
 Applications:
     - Efficient substring search and pattern matching.

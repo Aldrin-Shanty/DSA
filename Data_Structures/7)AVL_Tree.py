@@ -14,16 +14,16 @@ AVL Tree Operations:
 6. **Postorder Traversal**: Returns a list of elements in the AVL Tree following a postorder traversal (left, right, root).
 
 Time Complexity:
-- **Insertion**: O(log n), where n is the number of nodes in the tree.
-- **Deletion**: O(log n), where n is the number of nodes in the tree.
-- **Search**: O(log n), where n is the number of nodes in the tree.
-- **Traversal**: O(n), where n is the number of nodes in the tree.
+    - **Insertion**: O(log n), where n is the number of nodes in the tree.
+    - **Deletion**: O(log n), where n is the number of nodes in the tree.
+    - **Search**: O(log n), where n is the number of nodes in the tree.
+    - **Traversal**: O(n), where n is the number of nodes in the tree.
 
 Applications:
-- AVL Trees are used in situations where frequent insertions and deletions are performed
-    and quick search, insertion, and deletion operations are needed.
-- They are useful in implementing associative arrays, priority queues, and other data structures
-    where balanced search performance is required.
+    - AVL Trees are used in situations where frequent insertions and deletions are performed
+        and quick search, insertion, and deletion operations are needed.
+    - They are useful in implementing associative arrays, priority queues, and other data structures
+        where balanced search performance is required.
 
 """
 class TreeNode:

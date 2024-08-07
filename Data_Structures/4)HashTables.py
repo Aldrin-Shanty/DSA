@@ -27,22 +27,23 @@ Load Factor and Resizing:
 - When this threshold is reached, the hash table is resized (usually doubled) to maintain efficient performance and reduce collisions.
 
 Operations:
-- Insert data into the hash map with a given key.
-- Remove data from the hash map with a given key.
-- Retrieve data from the hash map using a given key.
-- Print all key-value pairs in the hash map.
+1. **Insert**: Insert data into the hash map with a given key.
+2. **Delete**: Remove data from the hash map with a given key.
+3. **Retrieve**: Retrieve data from the hash map using a given key.
+4. **Print**: Print all key-value pairs in the hash map.
 
 Time Complexity:
-- Insertion: O(1) average case, O(n) worst case (if hash collisions occur frequently).
-- Deletion: O(1) average case, O(n) worst case (if hash collisions occur frequently).
-- Retrieval: O(1) average case, O(n) worst case (if hash collisions occur frequently).
-- Printing: O(n), where n is the number of elements in the hash map.
+    - **Insert**: O(1) average case, O(n) worst case (if hash collisions occur frequently).
+    - **Delete**: O(1) average case, O(n) worst case (if hash collisions occur frequently).
+    - **Retrieve**: O(1) average case, O(n) worst case (if hash collisions occur frequently).
+    - **Print**: O(n), where n is the number of elements in the hash map.
 
 Applications:
-- Hash maps are commonly used for implementing associative arrays, database indexing, caches, and sets.
-- They are effective in scenarios where quick lookups, insertions, and deletions are required.
+    - Hash maps are commonly used for implementing associative arrays, database indexing, caches, and sets.
+    - They are effective in scenarios where quick lookups, insertions, and deletions are required.
 
 """
+
 
 class SimpleHashMap:
     def __init__(self):
@@ -99,11 +100,12 @@ class SimpleHashMap:
         for key, data in self.hash_map.items():
             print(f'{key}: {data}')
 
+
 # Example usage
 if __name__ == "__main__":
     # Create an instance of SimpleHashMap
     shm = SimpleHashMap()
-    
+
     # Insert data
     shm.insert_data(1, 'Data 1')
     shm.insert_data(2, 'Data 2')

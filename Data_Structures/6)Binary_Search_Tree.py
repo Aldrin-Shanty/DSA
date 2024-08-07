@@ -13,13 +13,13 @@ BST Operations:
 6. **Postorder Traversal**: Returns a list of elements in the BST following a postorder traversal (left, right, root).
 
 Time Complexity:
-- **Insertion**: O(h), where h is the height of the tree. In the average case, it's O(log n), but in the worst case (unbalanced tree), it's O(n).
-- **Search**: O(h), where h is the height of the tree. In the average case, it's O(log n), but in the worst case (unbalanced tree), it's O(n).
-- **Deletion**: O(h), where h is the height of the tree. In the average case, it's O(log n), but in the worst case (unbalanced tree), it's O(n).
-- **Traversal**: O(n), where n is the number of nodes in the tree.
+    - **Insertion**: O(h), where h is the height of the tree. In the average case, it's O(log n), but in the worst case (unbalanced tree), it's O(n).
+    - **Search**: O(h), where h is the height of the tree. In the average case, it's O(log n), but in the worst case (unbalanced tree), it's O(n).
+    - **Deletion**: O(h), where h is the height of the tree. In the average case, it's O(log n), but in the worst case (unbalanced tree), it's O(n).
+    - **Traversal**: O(n), where n is the number of nodes in the tree.
 
 Applications:
-- BSTs are used in various applications such as efficient searching, sorting, and maintaining ordered collections of data.
+    - BSTs are used in various applications such as efficient searching, sorting, and maintaining ordered collections of data.
 
 """
 

@@ -12,20 +12,20 @@ Heap Operations:
 3. **Peek**: Returns the root element of the heap without removing it.
 4. **Heapify**: Converts an iterable into a heap, rearranging the elements to satisfy the heap property.
 5. **Heap Transformations**:
-   - **Max-Heap**: Uses negation to transform Python’s min-heap into a max-heap.
-   - **Min-Heap**: Uses Python’s built-in `heapq` for a min-heap implementation
+       - **Max-Heap**: Uses negation to transform Python’s min-heap into a max-heap.
+       - **Min-Heap**: Uses Python’s built-in `heapq` for a min-heap implementation
 6. **Underlying Heap Implementations**:
-   - **MaxHeap**: Implements a max-heap manually with basic operations like insertion, deletion, and heapify.
-   - **MinHeap**: Implements a min-heap manually with basic operations like insertion, deletion, and heapify.
+       - **MaxHeap**: Implements a max-heap manually with basic operations like insertion, deletion, and heapify.
+       - **MinHeap**: Implements a min-heap manually with basic operations like insertion, deletion, and heapify.
 
 Heap Time Complexity:
-- **Insertion**: O(log n)
-- **Deletion** O(log n)
-- **Peek**: O(1)
-- **Heapify**: O(n), where n is the number of elements
+    - **Insertion**: O(log n)
+    - **Deletion** O(log n)
+    - **Peek**: O(1)
+    - **Heapify**: O(n), where n is the number of elements
 
 Applications:
-- Heaps are used in priority queues, heap sort, and algorithms like Dijkstra's shortest path and Prim's minimum spanning tree.
+    - Heaps are used in priority queues, heap sort, and algorithms like Dijkstra's shortest path and Prim's minimum spanning tree.
 
 """
 

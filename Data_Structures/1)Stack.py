@@ -1,16 +1,26 @@
 """
-This module implements a stack data structure using a list.
+Stack Data Structure
+
+This module implements a stack data structure using a Python list. A stack is a linear data structure that follows the Last In, First Out (LIFO) principle.
+
+Operations:
+1. **Push**: Adds an element to the top of the stack. This operation involves appending the element to the end of the list.
+2. **Pop**: Removes the element from the top of the stack. This operation involves removing the last element from the end of the list.
+3. **Is Empty**: Determines if the stack is empty. This operation involves checking whether the list has any elements.
+4. **Display**: Shows all elements in the stack from top to bottom. This operation involves traversing the entire list.
+5. **Size**: Returns the number of elements currently in the stack. This operation retrieves the length of the list.
 
 Time Complexity:
-- Push operation: O(1)
-- Pop operation: O(1)
-- Check if empty operation: O(1)
-- Display operation: O(n)
-- Size operation: O(1)
+    - **Push**: O(1) (constant time as it involves appending an element to the end of the list)
+    - **Pop**: O(1) (constant time as it involves removing the last element from the end of the list)
+    - **Is Empty**: O(1) (constant time as it involves checking if the list is empty)
+    - **Display**: O(n) (linear time as it requires traversing the entire list to show its contents)
+    - **Size**: O(1) (constant time as it retrieves the length of the list)
 
 Applications:
-Stacks are used in various applications such as function call management, expression evaluation, backtracking algorithms, and undo mechanisms in applications.
+    - Stacks are used in various applications such as function call management, expression evaluation, backtracking algorithms, and undo mechanisms in applications.
 """
+
 
 class Stack:
     def __init__(self):
@@ -69,7 +79,6 @@ class Stack:
         """
         return len(self.stack)
 
-# Sample Test Cases
 
 if __name__ == "__main__":
     stack = Stack()

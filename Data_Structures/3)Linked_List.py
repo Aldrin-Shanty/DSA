@@ -1,24 +1,32 @@
 """
 Singly Linked List (SLL)
 
-A singly linked list is a linear data structure where each element points to the next element in the sequence. 
-Each node in a singly linked list contains a data field and a reference to the next node.
+A singly linked list is a linear data structure where each node points to the next node in the sequence. Each node contains a data field and a reference to the next node.
+
+Operations:
+1. **Insertion at the beginning**: Adds a new node with specified data at the start of the list. The new node becomes the new head of the list.
+2. **Insertion at the end**: Adds a new node with specified data at the end of the list. Requires traversal from the head to the last node.
+3. **Insertion after a node**: Adds a new node with specified data after a given node. Requires knowing the node after which the new node will be inserted.
+4. **Deletion of a node**: Removes a node at a specified position. Requires traversal to find the node to be removed.
+5. **Search for a node**: Checks whether a node with specified data exists in the list. Requires traversal from the head to search through nodes.
+6. **Sorting the list**: Rearranges the nodes in ascending order of their data. Uses bubble sort which compares and swaps adjacent nodes.
+7. **Reversing the list**: Reverses the order of nodes in the list. Each node's next pointer is adjusted to point to the previous node.
 
 Time Complexity:
-- Insertion at the beginning: O(1)
-- Insertion at the end: O(n) (because traversal is required)
-- Insertion after a node: O(1) (if the node is given)
-- Deletion: O(n) (because traversal is required)
-- Search: O(n) (linear search)
-- Sorting: O(n^2) (using bubble sort)
-- Reversing: O(n)
+    - **Insertion at the beginning*: O(1) (constant time as it involves updating the head pointer)
+    - **Insertion at the end**: O(n) (linear time as it requires traversing the list to find the end)
+    - **Insertion after a node**: O(1) (constant time if the node is already known)
+    - **Deletion**: O(n) (linear time as it requires traversing the list to find the node to be deleted)
+    - **Search**: O(n) (linear search as it requires traversing the list)
+    - **Sorting**: O(n^2) (quadratic time using bubble sort)
+    - **Reversing**: O(n) (linear time as it involves traversing the list once)
 
 Applications:
-- Used to implement stacks and queues
-- Useful for memory-efficient implementations where elements are frequently inserted or removed
-- Ideal for scenarios where dynamic memory allocation is required
-
+    - Used to implement stacks and queues.
+    - Useful for memory-efficient implementations where elements are frequently inserted or removed.
+    - Ideal for scenarios where dynamic memory allocation is required.
 """
+
 
 class Single_Node:
     def __init__(self, data):
@@ -172,6 +180,7 @@ class SinglyLinkedList:
             current = next_node
         self.head = prev
 
+
 """
 Doubly Linked List (DLL)
 
@@ -192,6 +201,7 @@ Applications:
 - Ideal for scenarios where nodes are frequently inserted or removed from both ends
 
 """
+
 
 class Double_Node:
     def __init__(self, data):
@@ -357,12 +367,13 @@ class DoublyLinkedList:
         if temp is not None:
             self.head = temp.prev
 
+
 if __name__ == "__main__":
     # Test SinglyLinkedList
     sll = SinglyLinkedList()
 
     print("Testing SinglyLinkedList:")
-    
+
     # Insert at the beginning
     sll.insertAtBeginning(3)
     sll.insertAtBeginning(2)
@@ -408,7 +419,7 @@ if __name__ == "__main__":
     dll = DoublyLinkedList()
 
     print("Testing DoublyLinkedList:")
-    
+
     # Insert at the beginning
     dll.insertAtBeginning(3)
     dll.insertAtBeginning(2)

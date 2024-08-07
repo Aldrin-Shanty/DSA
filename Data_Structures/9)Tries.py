@@ -10,16 +10,16 @@ Operations:
 2. **CountWordsWithPrefix**: Counts the number of words in the Trie that start with the given prefix. It navigates to the end of the prefix and counts all words that can be formed from this point.
 
 Time Complexity:
-- **Insert**: O(m), where m is the length of the word being inserted. 
-    Each character is processed once, and each insertion operation involves creating nodes for new characters if they do not already exist.
-- **CountWordsWithPrefix**: O(m + k), where m is the length of the prefix and k is the number of words with that prefix. 
-    The method first traverses the Trie to find the end of the prefix, then recursively counts all words starting from that node.
+    - **Insert**: O(m), where m is the length of the word being inserted. 
+        Each character is processed once, and each insertion operation involves creating nodes for new characters if they do not already exist.
+    - **CountWordsWithPrefix**: O(m + k), where m is the length of the prefix and k is the number of words with that prefix. 
+        The method first traverses the Trie to find the end of the prefix, then recursively counts all words starting from that node.
 
 Applications:
-- **Autocomplete Systems**: Tries are used in search engines and text editors to provide suggestions based on user input.
-- **Spell Checking**: Tries can efficiently verify if a word is present in a dictionary.
-- **IP Routing**: Used in networking to efficiently match IP addresses and prefixes.
-- **Pattern Matching**: Useful in various algorithms and systems for efficient pattern matching and substring search.
+    - **Autocomplete Systems**: Tries are used in search engines and text editors to provide suggestions based on user input.
+    - **Spell Checking**: Tries can efficiently verify if a word is present in a dictionary.
+    - **IP Routing**: Used in networking to efficiently match IP addresses and prefixes.
+    - **Pattern Matching**: Useful in various algorithms and systems for efficient pattern matching and substring search.
 """
 
 class TrieNode:

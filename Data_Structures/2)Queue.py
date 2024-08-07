@@ -3,18 +3,27 @@ Queue Data Structure
 
 This module implements a basic queue using a Python list. A queue is a linear data structure that follows the First In, First Out (FIFO) principle.
 
+Operations:
+1. **Enqueue**: Adds an element to the rear of the queue. This operation involves appending the element to the end of the list.
+2. **Dequeue**: Removes an element from the front of the queue. This operation involves removing the element at the start of the list and requires shifting all remaining elements.
+3. **Display**: Shows all elements in the queue from front to rear. This operation involves traversing the entire list to present its contents.
+4. **Size**: Returns the number of elements currently in the queue. This operation retrieves the length of the list.
+5. **Is Empty**: Checks if the queue is empty. This operation verifies whether the list is empty.
+
 Time Complexity:
-- Enqueue: O(1)
-- Dequeue: O(n)
-- Display: O(n)
-- Size: O(1)
-- Is Empty: O(1)
+    - **Enqueue**: O(1) (constant time as it involves appending an element to the end of the list)
+    - **Dequeue**: O(n) (linear time as it involves removing the first element and shifting all remaining elements)
+    - **Display**: O(n) (linear time as it requires traversing the entire list to show its contents)
+    - **Size**: O(1) (constant time as it retrieves the length of the list)
+    - **Is Empty**: O(1) (constant time as it checks if the list is empty)
 
 Applications:
-Queues are used in scenarios such as scheduling tasks, handling requests in web servers, and breadth-first search algorithms.
+    - Queues are used in scenarios such as scheduling tasks, handling requests in web servers, and breadth-first search algorithms.
 """
 
+
 from collections import deque
+
 
 class Queue:
     def __init__(self):
@@ -90,6 +99,7 @@ Time Complexity:
 Applications:
 Deques are used in scenarios such as implementing a queue with both ends accessible, maintaining history in applications, and managing buffer data.
 """
+
 
 class Deque:
     def __init__(self):

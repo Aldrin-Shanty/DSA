@@ -10,14 +10,14 @@ Operations:
     This operation efficiently computes the result by merging information from relevant segments of the tree.
 
 Time Complexity:
-- **Initialization**: O(n), where n is the number of elements in the array.
-- **Update**: O(log n)
-- **Query**: O(log n)
+    - **Initialization**: O(n), where n is the number of elements in the array.
+    - **Update**: O(log n)
+    - **Query**: O(log n)
 
 Applications:
-- **Range Queries**: Efficiently calculates sums, minimums, maximums, or other aggregate functions over a specified range in an array.
-- **Point Updates**: Allows updates to individual elements while maintaining the ability to query ranges efficiently.
-- **Interval Problems**: Useful for problems that involve querying and updating intervals or segments, such as finding the sum of elements in a range or updating specific values.
+    -  **Range Queries**: Efficiently calculates sums, minimums, maximums, or other aggregate functions over a specified range in an array.
+    - **Point Updates**: Allows updates to individual elements while maintaining the ability to query ranges efficiently.
+    - **Interval Problems**: Useful for problems that involve querying and updating intervals or segments, such as finding the sum of elements in a range or updating specific values.
 
 The Segment Tree is well-suited for scenarios where both updates and queries are frequent, and where direct array manipulations would be too slow or cumbersome. It provides a balanced approach to manage dynamic data with optimal time complexities for both updates and queries.
 """

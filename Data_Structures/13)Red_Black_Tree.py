@@ -13,12 +13,12 @@ Operations:
 8. **Postorder Traversal**: Performs a post-order traversal of the Red-Black Tree and prints node keys.
 
 Time Complexity:    
-- **Search**: O(log n), where n is the number of nodes in the tree.
-- **Insert**: O(log n), where n is the number of nodes in the tree.
-- **Delete**: O(log n), where n is the number of nodes in the tree.
-- **Minimum**: O(log n), where n is the number of nodes in the tree.
-- **Maximum**: O(log n), where n is the number of nodes in the tree.
-- **Traversal**: O(n), where n is the number of nodes in the tree.
+    - **Search**: O(log n), where n is the number of nodes in the tree.
+    - **Insert**: O(log n), where n is the number of nodes in the tree.
+    - **Delete**: O(log n), where n is the number of nodes in the tree.
+    - **Minimum**: O(log n), where n is the number of nodes in the tree.
+    - **Maximum**: O(log n), where n is the number of nodes in the tree.
+    - **Traversal**: O(n), where n is the number of nodes in the tree.
 
 Applications:
     - Maintaining a balanced tree structure for efficient search, insertion, and deletion operations.
